@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="successSubmit">Form Submitted Successfully</div>
+    <div id="submitFailure">Details you tried to submit is invalid !</div>
+    <div id="connectionFailure"></div>
+    <div id="notAgreed">
+      Can't submit form until you agree terms and conditions
+    </div>
+    <!-- <div class="failedSubmit"></div> -->
+    <form action="#" id="studentForm">
+      <div class="outerContainerForm">
+        <div class="innerHalf" id="leftHalf">
+          <div class="heading">
+            <h2>General Information</h2>
+          </div>
+          <div class="contentOuter">
+            <div class="contentBox">
+              <div id="firstNameDiv">
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="First Name"
+                />
+              </div>
+              <div id="lastNameDiv">
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="courseSelectBox">
+                <select name="course" id="course">
+                  <option value="" disabled selected>Course</option>
+                  <option value="CSIT">CSIT</option>
+                  <option value="BBA">BBA</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BIT">BIT</option>
+                </select>
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="universityInputBox">
+                <input
+                  type="text"
+                  name="university"
+                  id="university"
+                  placeholder="University"
+                />
+              </div>
+              <div id="collegeDiv">
+                <input
+                  type="text"
+                  name="college"
+                  id="college"
+                  placeholder="College"
+                />
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="rollNumberBox">
+                <input
+                  type="text"
+                  id="rollNo"
+                  name="rollNo"
+                  placeholder="Roll Number"
+                />
+              </div>
+              <div id="regNumberBox">
+                <input
+                  type="text"
+                  id="regNo"
+                  name="regNo"
+                  placeholder="Registration Number"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="innerHalf" id="rightHalf">
+          <div class="heading">
+            <h2>Contact Details</h2>
+          </div>
+          <div class="contentOuter">
+            <div class="contentBox">
+              <div id="addressStateBox">
+                <select name="state" id="state" onchange="addDistricts()">
+                  <option value="" disabled selected>Select Your State</option>
+                  <option value="Koshi">Koshi</option>
+                  <option value="Madhesh">Madhesh</option>
+                  <option value="Bagmati">Bagmati</option>
+                  <option value="Gandaki">Gandaki</option>
+                  <option value="Lumbini">Lumbini</option>
+                  <option value="Karnali">Karnali</option>
+                  <option value="Sudurpaschim">Sudurpaschim</option>
+                </select>
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="districtSelectBox">
+                <select name="district" id="district">
+                  <option value="" disabled selected>
+                    Select Your District
+                  </option>
+                  <!-- This part will be dynamically created using JavaScript -->
+                </select>
+              </div>
+              <div id="cityInputBox">
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Village/Municipality"
+                />
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="additionalAddressBox">
+                <input
+                  type="text"
+                  id="street"
+                  name="street"
+                  placeholder="Additional address details"
+                />
+              </div>
+            </div>
+            <div class="contentBox" id="emailAndPhone">
+              <div id="phoneNumberInputBox">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div id="emailInputBox">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="termsAndConditions">
+                <input type="checkbox" id="agree" value="agreed" />
+                <label for="agree"
+                  >I do accept the terms and conditions of your site</label
+                >
+              </div>
+            </div>
+            <div class="contentBox">
+              <div id="submitButtonBox">
+                <button type="submit" name="submit">Submit Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="../js/provienceAndDistrict.js"></script>
+    <script src="../js/handleFormSubmission.js"></script>
+  </body>
+</html>

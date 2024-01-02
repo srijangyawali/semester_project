@@ -1,0 +1,209 @@
+@import url(./header.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(154, 208, 194);
+  background: linear-gradient(
+    180deg,
+    rgba(154, 208, 194, 1) 58%,
+    rgba(236, 244, 214, 1) 100%
+  );
+}
+
+.outerContainerForm {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  width: 55vw;
+}
+
+#studentForm {
+  border-radius: 10px;
+  box-shadow: -4px 6px 10px 1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -4px 6px 10px 1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -4px 6px 10px 1px rgba(0, 0, 0, 0.42);
+}
+
+#leftHalf,
+#rightHalf {
+  flex: 1;
+}
+
+#leftHalf {
+  background-color: white;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#rightHalf {
+  padding: 40px 40px 40px 40px;
+  background-color: #265073;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#leftHalf > .heading {
+  color: #265073;
+}
+
+#rightHalf > .heading {
+  color: white;
+}
+
+.heading h2 {
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 25px;
+}
+
+.contentOuter {
+  width: 100%;
+}
+
+.contentBox {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.contentBox input,
+.contentBox select {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#leftHalf .contentBox input,
+#leftHalf .contentBox select {
+  border-bottom: 1px solid grey;
+}
+
+.contentBox input:focus {
+  outline: none;
+}
+
+#leftHalf .contentBox select {
+  color: grey;
+}
+
+select:focus {
+  outline: none;
+}
+
+#rightHalf .contentBox input,
+#rightHalf .contentBox select {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.contentBox input::placeholder,
+.contentBox input,
+.contentBox select,
+.contentBox label {
+  font-size: 14px;
+}
+
+#rightHalf .contentBox input::placeholder {
+  color: white;
+}
+
+#rightHalf .contentBox #phoneNumberInputBox {
+  width: 30%;
+}
+#rightHalf .contentBox #emailInputBox {
+  width: 65%;
+}
+
+#rightHalf .contentBox #additionalAddressBox,
+#rightHalf .contentBox #addressStateBox,
+#leftHalf .contentBox #courseSelectBox,
+#rightHalf .contentBox #phoneNumberInputBox input,
+#rightHalf .contentBox #emailInputBox input,
+#rightHalf .contentBox #additionalAddressBox input,
+#rightHalf .contentBox #addressStateBox select,
+#leftHalf .contentBox #courseSelectBox select {
+  width: 100%;
+}
+
+#rightHalf .contentBox #termsAndConditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightHalf .contentBox #termsAndConditions input {
+  margin-right: 10px;
+}
+
+#rightHalf .contentBox #submitButtonBox {
+  padding-top: 10px;
+}
+
+#rightHalf .contentBox button {
+  padding: 5px 15px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #265073;
+}
+
+#rightHalf .contentBox button:focus-visible {
+  outline: none;
+}
+
+#rightHalf .contentBox button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+#rightHalf .contentBox select > option {
+  background-color: #265073;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+#successSubmit,
+#submitFailure,
+#notAgreed,
+#connectionFailure {
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: translateX(1000px);
+  transition: transform 1000ms;
+  /* color: white; */
+}
+
+#successSubmit {
+  background-color: #acf38c;
+}
+
+#submitFailure,
+#notAgreed,
+#connectionFailure {
+  background-color: #ff8888;
+  color: white;
+  font-weight: 500;
+  /* visibility: hidden; */
+}
+
+#notAgreed {
+  top: 55px;
+}
+
+#connectionFailure {
+  top: 55px;
+}
+
+.errorClass {
+  border: 3px solid #ff8888 !important;
+  border-radius: 0.5em;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div id="failedLogin">Invalid Credentials</div>
+    <div id="connectionFailure"></div>
+    <div class="outerContainerLogin">
+      <div class="sideImageContainer"></div>
+      <div class="formContainer">
+        <form id="loginForm">
+          <div id="header"><h1>User Login</h1></div>
+          <div class="container" id="usernameContainer">
+            <input
+              type="text"
+              placeholder="Username"
+              id="username"
+              name="username"
+            />
+          </div>
+          <div class="container" id="passwordContainer">
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="container" id="sessionDiv">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+          <div class="container" id="buttonContainer">
+            <button type="submit" name="login" id="login">Login</button>
+          </div>
+        </form>
+        <div class="externalDiv" id="studentFormDirectorDiv">
+          <button id="redirect">
+            <a href="./studentForm.html">I am a student</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/loginHandle.js"></script>
+  </body>
+</html>

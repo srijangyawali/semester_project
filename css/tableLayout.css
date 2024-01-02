@@ -1,0 +1,53 @@
+@import url(./header.css);
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(154, 208, 194, 1) 58%,
+    rgba(236, 244, 214, 1) 100%
+  );
+}
+.outerLayoutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table,
+td,
+th {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #265073;
+  color: white;
+}
+
+.oddRow {
+  background-color: rgb(211, 211, 211);
+}
+
+.evenRow {
+  background-color: #fffef1;
+}
+
+.heading {
+  margin-bottom: 40px;
+  font-size: 34px;
+  font-weight: 500;
+  color: #265073;
+  text-align: center;
+}

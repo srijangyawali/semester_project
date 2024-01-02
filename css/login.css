@@ -1,0 +1,134 @@
+@import url(./header.css);
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 208, 194);
+  background: linear-gradient(
+    180deg,
+    rgba(154, 208, 194, 1) 58%,
+    rgba(236, 244, 214, 1) 100%
+  );
+}
+
+.outerContainerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: -4px 6px 10px 1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: -4px 6px 10px 1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: -4px 6px 10px 1px rgba(0, 0, 0, 0.42);
+}
+
+.sideImageContainer {
+  width: 55%;
+  background-image: url(../images/loginSide1.jpg);
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+.formContainer {
+  width: 45%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100vh; */
+  padding: 30px 50px;
+  flex: 1;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #e1e8ea;
+}
+/*
+#265073
+#acf38c
+#ff8888
+
+*/
+#header {
+  margin-bottom: 40px;
+  color: #265073;
+}
+
+h1 {
+  font-weight: 500px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container,
+.externalDiv {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container > input {
+  border: none;
+  border-bottom: 1px solid grey;
+  background: transparent;
+}
+
+.container > input::placeholder,
+.container > input {
+  padding: 10px 5px;
+  font-size: 16px;
+}
+.container > input:focus {
+  outline: none;
+}
+
+#redirect,
+#login {
+  width: 100%;
+  background-color: #265073;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 5px;
+}
+
+#sessionDiv {
+  margin: 20px 0px;
+}
+
+button {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.externalDiv,
+#buttonContainer {
+  padding: 0px 10px;
+}
+button:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.errorClass {
+  border: 3px solid #ff8888 !important;
+  border-radius: 0.5em;
+}
+
+#failedLogin,
+#connectionFailure {
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: translateX(1000px);
+  transition: transform 1000ms;
+  background-color: #ff8888;
+  color: white;
+  font-weight: 500;
+}
